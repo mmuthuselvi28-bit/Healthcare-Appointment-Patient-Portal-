@@ -1,0 +1,371 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8fbff;
+    color: #263238;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: linear-gradient(90deg, #075985, #0e7490);
+    padding: 15px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #bae6fd !important;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 620px;
+    padding-top: 170px;
+    padding-bottom: 100px;
+    background:
+        linear-gradient(120deg, #075985, #0891b2);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #bae6fd;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+.hero-card {
+    padding: 50px 30px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.hero-card i {
+    font-size: 90px;
+    color: #e0f2fe;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.dashboard-section {
+    margin-top: -55px;
+    position: relative;
+    z-index: 5;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px);
+}
+
+.dashboard-card i {
+    font-size: 35px;
+    color: #0891b2;
+}
+
+.dashboard-card h3 {
+    font-size: 2rem;
+    margin: 10px 0 0;
+}
+
+
+/* ================= COMMON ================= */
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #0891b2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+
+/* ================= FORM ================= */
+
+.portal-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+.form-section {
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.form-section h4 {
+    color: #075985;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.form-section h4 i {
+    margin-right: 8px;
+}
+
+.form-control,
+.form-select {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0891b2;
+    box-shadow: 0 0 0 0.2rem rgba(8,145,178,0.15);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* ================= TABLE ================= */
+
+.table thead {
+    background: #075985;
+    color: white;
+}
+
+.table thead th {
+    padding: 15px;
+}
+
+.table tbody td {
+    padding: 15px;
+}
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.confirmed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+
+/* ================= HEALTH ================= */
+
+.health-card {
+    background: white;
+    padding: 35px;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    border-left: 5px solid #0891b2;
+}
+
+.health-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0f2fe;
+    color: #075985;
+    border-radius: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.health-card h4 {
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.health-card p {
+    margin-bottom: 12px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    height: 100%;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 50px;
+    color: #0891b2;
+}
+
+.service-card h4 {
+    margin: 20px 0 10px;
+}
+
+
+/* ================= TECHNOLOGY ================= */
+
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.tech-box {
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.tech-box:hover {
+    transform: translateY(-8px);
+}
+
+.tech-box i {
+    font-size: 55px;
+    color: #0891b2;
+}
+
+.tech-box h5 {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #082f49;
+    color: white;
+    padding: 45px 0;
+}
+
+footer p {
+    color: #cbd5e1;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .tech-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero {
+        padding-top: 140px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .portal-card {
+        padding: 22px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .tech-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+```
